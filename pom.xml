@@ -15,6 +15,12 @@
             <artifactId>chuck-norris-for-actuator</artifactId>
             <version>3.0.0-M4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.kohsuke/wordnet-random-name -->
+        <dependency>
+            <groupId>org.kohsuke</groupId>
+            <artifactId>wordnet-random-name</artifactId>
+            <version>1.5</version>
+        </dependency>
 
 
 
