@@ -21,10 +21,6 @@ public class Zachod{
         return atak;
     }
 
-    public void setAtak(int atak) {
-        this.atak = atak;
-    }
-
     @Override
     public String toString() {
         return "Zachod{" +
