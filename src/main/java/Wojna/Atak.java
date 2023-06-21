@@ -5,15 +5,19 @@ import Przeciwnicy.Zachod;
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.kohsuke.randname.RandomNameGenerator;
 
+import java.util.Random;
+
 public class Atak {
 
     /*odzywki uzywają bibliotek z mavena
     zarty o chucku norrisie i random name generator
     zrobiłem tą metodę, żeby kod był czystszy, bo wykorzystuje ją po każdym ataku
+    użyłem biblioteki random, żeby wysolować seed, bo jakiś błąd był
      */
     public static void odzywki(int atak){
+        Random rand = new Random();
         ChuckNorrisQuotes joke = new ChuckNorrisQuotes();
-        RandomNameGenerator rn = new RandomNameGenerator();
+        RandomNameGenerator rn = new RandomNameGenerator(rand.nextInt(600));
         System.out.println(rn.next()+" powiedział: "+joke.getRandomQuote()+" i zabrał przeciwnikowi "+atak+" życia.");
     }
     //nie zrobiłem interface, wiec zrobiłem łatwo dwie takie same metody
