@@ -1,6 +1,7 @@
 package Przeciwnicy;
 
 public class Zachod{
+    //ta klasa dziala identycznie jak klasa Wschod. Tam są komentarze do wszystkiego
     protected int zdrowie;
     protected int atak;
 
